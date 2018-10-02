@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IBM - Watson Assistant Demo</title>
+  <base href="/">
+  <meta name="author" content="Gurvinder Singh">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <base href="/">
+  <!--  Social tags      -->
+  <meta name="description" content="This application shows the capabilities of Watson Assistant and Discovery services to work together to find answers on a given query.">
+  <meta name="keywords" content="IBM, IBM Cloud, Cognitive, Watson, Watson Assistant, Watson Discovery, Cloudant NoSQL Database, Angular, Loopback, API Connect">
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="IBM Watson Assistant Demo">
+  <meta itemprop="description" content="This application shows the capabilities of Watson Assistant and Discovery services to work together to find answers on a given query.">
+
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/css/material-kit.min.css?v=2.0.3">
+  <!-- Documentation extras -->
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/assets-for-app/demo.css" rel="stylesheet" />
+  <link href="assets/css/app.css" rel="stylesheet" />
+  <link href="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/assets-for-app/vertical-nav.css" rel="stylesheet" />
+  <!-- iframe removal -->
+  <script type="text/javascript">
+      if (document.readyState === 'complete') {
+          if (window.location != window.parent.location) {
+              const elements = document.getElementsByClassName("iframe-extern");
+              while (elemnts.lenght > 0) elements[0].remove();
+              // $(".iframe-extern").remove();
+          }
+      };
+  </script>
+
+</head>
+
+<body class="profile-page">
+  <app-root></app-root>
+</body>
+
+<!--   Core JS Files   -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/core/jquery.min.js"></script>
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/core/popper.min.js"></script>
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/bootstrap-material-design.min.js"></script>
+<!--  Google Maps Plugin  -->
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script> -->
+<!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/plugins/moment.min.js"></script>
+<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/plugins/nouislider.min.js"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/plugins/bootstrap-selectpicker.js"></script>
+<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/  -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/plugins/bootstrap-tagsinput.js"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/plugins/jasny-bootstrap.min.js"></script>
+<!--	Plugin for Small Gallery in Product Page -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/plugins/jquery.flexisel.js"></script>
+<!-- Plugins for presentation and navigation  -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/assets-for-app/js/modernizr.js"></script>
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/assets-for-app/js/vertical-nav.js"></script>
+<!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/js/material-kit.min.js"></script>
+<!-- Fixed Sidebar Nav - js With initialisations For Demo Purpose, Don't Include it in your project -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/assets-for-app/js/material-kit-demo.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+
+        //init DateTimePickers
+        materialKit.initFormExtendedDatetimepickers();
+
+        if(document.getElementById('sliderRegular') || document.getElementById('sliderDouble')){
+          // Sliders Init
+          materialKit.initSliders();
+        }
+
+
+    });
+</script>
+
+<!-- Sharrre libray -->
+<script src="https://storage.googleapis.com/hukam-cdn/public/material-theme/assets/assets-for-app/js/jquery.sharrre.js">
+</script>
+
+</html>

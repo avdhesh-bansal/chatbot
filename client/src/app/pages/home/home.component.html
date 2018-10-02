@@ -1,0 +1,153 @@
+
+	<div id="page_header" class="page-header header-filter clear-filter" data-parallax="true" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 ml-auto mr-auto">
+					<div class="brand text-center">
+						<h1>Watson Assistant Demo</h1>
+						<!-- <h2>IBM Watson Conversation Demo</h2> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="main main-raised">
+
+					<div class="section section-comments">
+			
+								<!-- <form class="form" #chatForm="ngForm" method="" action=""> -->
+									<div #chatRow class="row chat-row">
+										<div class="col-md-12 ml-auto mr-auto">
+											<button class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#reqRespModal">
+	                      Show Req/Resp
+	                    </button>
+
+											<div class="media-area">
+														<div class="media" *ngFor="let dialog of conversations">
+
+																	<a class="float-left" href="javascript:void(0);" *ngIf="dialog.input && dialog.input.text && dialog.input.text != ''">
+																		<div class="avatar">
+																			<img class="media-object" src="assets/images/avatars/profile.jpg" alt="..."/>
+																		</div>
+																	</a>
+																	<div class="media-body" *ngIf="dialog.input && dialog.input.text && dialog.input.text != ''">
+																		<h4 *ngIf="currentUser && currentUser.user" class="media-heading">{{currentUser.user.firstName}} <small>&middot; {{dialog.input.timestamp | amTimeAgo}}</small></h4>
+																		<h4 *ngIf="!currentUser || !currentUser.user" class="media-heading">User <small>&middot; {{dialog.input.timestamp | amTimeAgo}}</small></h4>
+																		<h6 class="text-muted"></h6>
+
+																		<p>{{dialog.input.text}}</p>
+
+																					<a class="float-left" href="javascript:void(0);" *ngIf="dialog.output.text">
+																						<div class="avatar watson">
+																							<img class="media-object" src="assets/images/avatars/watson-avatar.png" alt="..."/>
+																						</div>
+																					</a>
+																				<div class="media-body" *ngIf="dialog.output.text">
+																						<h4 class="media-heading">Watson <small>&middot; {{dialog.output.timestamp | amTimeAgo}}</small></h4>
+																						<h6 class="text-muted"></h6>
+																						<div *ngIf="!dialog.output.discoveryResults" >
+																							<p *ngFor="let msg of dialog.output.text"><span [innerHtml]="msg"></span></p>
+																						</div>
+																						<div *ngIf="dialog.output.discoveryResults">
+																									<h5>Here are some results from Discovery: </h5>
+																									 <div class="result" *ngFor="let discoveryResult of dialog.output.discoveryResults">
+																											<div class="result-title" >
+																													<p>{{discoveryResult.title}}</p>
+																											</div>
+																											<div class="result-preview" >
+																													<p>{{discoveryResult.bodySnippet}}</p>
+																											</div>
+																											<div class="result-link" >
+																													<a href="{{discoveryResult.sourceUrl}}" target="_blank"> More details.. </a>
+																											</div>
+																										</div>
+																						</div>
+
+																						<div class="media-footer footer-feedback" *ngIf="dialog.output.feedback && dialog.output.feedback.show">
+																							<a href="#pablo" class="btn btn-success btn-link float-right btn-feedback" data-toggle="tooltip" title="Like" data-placement="top"  data-container="body">
+																								<i class="material-icons" (click)="provideFeedback(dialog, 'positive')">thumb_up</i>
+																							</a>
+																							<a href="#pablo" class="btn btn-danger btn-link float-right btn-feedback" data-toggle="tooltip" title="Dislike" data-placement="top"  data-container="body">
+																								<i class="material-icons" (click)="provideFeedback(dialog, 'negative')">thumb_down</i>
+																							</a>
+																						</div>
+
+																					</div>
+																			</div>
+																			<div class="media-body" *ngIf="(!dialog.input || !dialog.input.text) && dialog.output.text != ''">
+																					<a class="float-left" href="javascript:void(0);" >
+																						<div class="avatar watson">
+																							<img class="media-object" src="assets/images/avatars/watson-avatar.png" alt="..."/>
+																						</div>
+																					</a>
+																					<div class="media-body" >
+																						<h4 class="media-heading">Watson <small>&middot; {{dialog.output.timestamp | amTimeAgo}}</small></h4>
+																						<h6 class="text-muted"></h6>
+
+																						<p *ngFor="let msg of dialog.output.text"><span [innerHtml]="msg"></span></p>
+
+																				 </div>
+																		</div>
+										 						</div>
+
+													</div>
+									</div>
+									<div class="col-md-12 ml-auto mr-auto">
+												<div class="row">
+															<div class="col-md-10">
+																	<div class="media media-post">
+																		<a class="author float-left" href="#pablo">
+                                        <div class="avatar">
+                                            <img class="media-object" alt="64x64" src="assets/images/avatars/profile.jpg">
+                                        </div>
+                                    </a>
+																		<div class="media-body">
+                                        <input #chatInputTxt class="form-control" name="input.text" [(ngModel)]="conversationObj.params.input.text" placeholder="Enter text here..." (keyup.enter)="fetchConversationResponse()"  />
+                                    </div>
+																	</div>
+
+															</div>
+															<div class="col-sm-2">
+																<div class="input-group send-btn-container">
+																	<button class="btn btn-primary btn-fab btn-fab-mini btn-round send-btn" (click)="fetchConversationResponse()">
+																			<i class="material-icons">send</i>
+																	</button>
+																</div>
+															</div>
+													</div>
+								</div>
+								<!-- </form> -->
+							</div>
+
+				
+
+
+
+
+
+		</div>
+	</div>
+
+
+		<!-- Sart Modal -->
+		<div class="modal fade" id="reqRespModal" tabindex="-1" role="dialog" aria-labelledby="reqRespModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Watson JSON Request and Response</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="material-icons">clear</i>
+            </button>
+					</div>
+					<div class="modal-body">
+						<prettyjson [obj]="conversations[conversations.length - 1]"></prettyjson>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  End Modal -->

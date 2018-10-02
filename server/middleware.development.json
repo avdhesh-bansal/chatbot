@@ -1,0 +1,54 @@
+{
+  "initial:before": {
+    "loopback#favicon": {}
+  },
+  "initial": {
+    "loopback-context#per-request": {
+      "params": {
+        "enableHttpContext": false
+      }
+    },
+    "compression": {},
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    }
+  },
+  "auth": {
+    "loopback#token": {
+      "params": {
+        "model": "CustomAccessToken"
+      },
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
+  },
+  "routes": {
+    "loopback#rest": {
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
+  },
+  "files": {
+    "loopback#static": [
+      {
+        "paths": ["/"],
+        "params": "$!../client/dist"
+      }
+    ]
+  },
+  "final:after": {
+    "./middleware/error-logger": {},
+    "strong-error-handler": {
+      "params": {
+        "debug": false,
+        "log": false
+      }
+    }
+  }
+}

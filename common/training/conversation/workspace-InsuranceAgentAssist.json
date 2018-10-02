@@ -1,0 +1,1814 @@
+{
+  "name": "InsuranceAgentAssist",
+  "intents": [{
+    "intent": "PREMIUM_INFORMATION",
+    "examples": [{
+      "text": "when is my payment after this one due?"
+    }, {
+      "text": "is it cheaper to pay annually?"
+    }, {
+      "text": "when will you send a bill for my premium?"
+    }, {
+      "text": "what is my payment?"
+    }, {
+      "text": "when should I send my next payment?"
+    }, {
+      "text": "how much is my premium"
+    }, {
+      "text": "when is my next premium due?"
+    }, {
+      "text": "how much do I have to pay on my policy?"
+    }, {
+      "text": "change billing modes?"
+    }, {
+      "text": "get their invoice sooner?"
+    }, {
+      "text": "get an invoice sooner"
+    }, {
+      "text": "using their value to pay for premiums?"
+    }, {
+      "text": "draft once a year for my premium?"
+    }, {
+      "text": "what do they owe on their policy?"
+    }, {
+      "text": "accept money orders for premiums?"
+    }, {
+      "text": "how to pay for this policy?"
+    }, {
+      "text": "how to pay monthly?"
+    }, {
+      "text": "what is the next payment on their policy"
+    }, {
+      "text": "what is their payment?"
+    }, {
+      "text": "payment due on policy?"
+    }, {
+      "text": "when will bill be sent for premiums?"
+    }, {
+      "text": "is their next premium due soon?"
+    }, {
+      "text": "when is their next premium due?"
+    }, {
+      "text": "what's my premium"
+    }, {
+      "text": "what is his premium?"
+    }, {
+      "text": "how long does this pay me until?"
+    }, {
+      "text": "premium"
+    }]
+  }, {
+    "intent": "LONG_TAIL",
+    "examples": [{
+      "text": "what is non-forfeitrure benefits?"
+    }, {
+      "text": "what are the community property states?"
+    }, {
+      "text": "what if no beneficiary is alive?"
+    }, {
+      "text": "what if there are two primary beneficiaries"
+    }, {
+      "text": "what is a primary beneficiary?"
+    }, {
+      "text": "how do you release proceeds to a beneficiary?"
+    }, {
+      "text": "what is a term issue?"
+    }, {
+      "text": "what are heirs?"
+    }, {
+      "text": "What is a beneficiary?"
+    }, {
+      "text": "What is a trust beneficiary"
+    }, {
+      "text": "what is a grantor?"
+    }, {
+      "text": "what is a direct bil?"
+    }, {
+      "text": "what is a trustor?"
+    }, {
+      "text": "what is a settlor?"
+    }, {
+      "text": "what is a trust?"
+    }, {
+      "text": "what is a living trust?"
+    }, {
+      "text": "what is an irrevocable beneficiary?"
+    }, {
+      "text": "what's a beneficiary"
+    }, {
+      "text": "what's a grantor"
+    }, {
+      "text": "what's a trustor"
+    }, {
+      "text": "what's a living trust"
+    }, {
+      "text": "what's a a living trust"
+    }, {
+      "text": "what is partial surrender?"
+    }, {
+      "text": "what is a policy loan?"
+    }, {
+      "text": "what are policy provisions?"
+    }, {
+      "text": "what happens when the grantor dies?"
+    }, {
+      "text": "what is a testamentary trust?"
+    }, {
+      "text": "what is a inter vivos trust?"
+    }, {
+      "text": "what is inter vivos?"
+    }, {
+      "text": "what is the collateral assignment form?"
+    }, {
+      "text": "what is collateral assignment?"
+    }, {
+      "text": "what is an assignment?"
+    }, {
+      "text": "what is an absolute assignment?"
+    }, {
+      "text": "what is a revocable beneficiary?"
+    }, {
+      "text": "who is the primary beneficiary?"
+    }, {
+      "text": "what is a class designation?"
+    }, {
+      "text": "how should you indicate beneficiarys?"
+    }, {
+      "text": "what is a seperate property?"
+    }, {
+      "text": "what is a reinstatement provision?"
+    }, {
+      "text": "what is an ETF?"
+    }, {
+      "text": "what are single pay policies?"
+    }, {
+      "text": "what are payment plans?"
+    }, {
+      "text": "what is a single premium policy?"
+    }, {
+      "text": "what are modes of payment?"
+    }, {
+      "text": "what are some common riders?"
+    }, {
+      "text": "what are riders?"
+    }]
+  }, {
+    "intent": "DENY",
+    "examples": [{
+      "text": "Nope"
+    }, {
+      "text": "No thanks"
+    }, {
+      "text": "Nah"
+    }, {
+      "text": "No thank you"
+    }, {
+      "text": "No"
+    }, {
+      "text": "Nopes"
+    }, {
+      "text": "Not right now"
+    }, {
+      "text": "nothing"
+    }, {
+      "text": "n"
+    }, {
+      "text": "Negative"
+    }, {
+      "text": "That's not right"
+    }]
+  }, {
+    "intent": "AFFIRM",
+    "examples": [{
+      "text": "Alrighty"
+    }, {
+      "text": "OK"
+    }, {
+      "text": "Alright"
+    }, {
+      "text": "ye"
+    }, {
+      "text": "sure"
+    }, {
+      "text": "Yes that's right"
+    }, {
+      "text": "Yes please"
+    }, {
+      "text": "Yea that's the one"
+    }, {
+      "text": "Yes I do"
+    }, {
+      "text": "Yep"
+    }, {
+      "text": "Yes"
+    }, {
+      "text": "Yeah looks right"
+    }, {
+      "text": "Yeah"
+    }, {
+      "text": "Sounds good"
+    }, {
+      "text": "okay"
+    }, {
+      "text": "y"
+    }]
+  }, {
+    "intent": "CHANGE_ACCOUNTS",
+    "examples": [{
+      "text": "different policy number"
+    }, {
+      "text": "different policy numbers"
+    }, {
+      "text": "change policy numbers"
+    }, {
+      "text": "I have another client"
+    }, {
+      "text": "different account"
+    }, {
+      "text": "show me a new account"
+    }, {
+      "text": "change the account I'm looking at"
+    }, {
+      "text": "change accounts"
+    }, {
+      "text": "I want to look at a different clients account"
+    }, {
+      "text": "change users"
+    }, {
+      "text": "I have a new customer"
+    }, {
+      "text": "I don't need anymore help with this account"
+    }, {
+      "text": "I dont need anymore help"
+    }, {
+      "text": "I'm good here"
+    }, {
+      "text": "I dont need anything else"
+    }, {
+      "text": "dont need anything"
+    }, {
+      "text": "that's all"
+    }, {
+      "text": "that's it"
+    }]
+  }, {
+    "intent": "PAY_NOW",
+    "examples": [{
+      "text": "pay their premium"
+    }, {
+      "text": "take their info and pay bill now"
+    }, {
+      "text": "she wants to pay now"
+    }, {
+      "text": "They would like to pay now"
+    }, {
+      "text": "get their premium taken care of now"
+    }, {
+      "text": "Pay bill now"
+    }, {
+      "text": "pay her account"
+    }, {
+      "text": "Pay their bill"
+    }]
+  }, {
+    "intent": "REPRESENTATIVE",
+    "examples": [{
+      "text": "You're not helping me at all"
+    }, {
+      "text": "I'm tired of this. Transfer me to a human"
+    }, {
+      "text": "I'm not really getting what I need right now"
+    }, {
+      "text": "I'm not getting the help I need"
+    }, {
+      "text": "Transfer me to a human"
+    }, {
+      "text": "You're not helping me"
+    }, {
+      "text": "I need to speak to a person"
+    }, {
+      "text": "I need to speak to a human"
+    }, {
+      "text": "I'd like to speak to a representative"
+    }]
+  }, {
+    "intent": "GREETING",
+    "examples": [{
+      "text": "Hi what's up"
+    }, {
+      "text": "hii"
+    }, {
+      "text": "Hey"
+    }, {
+      "text": "Hello"
+    }, {
+      "text": "Hi nice to meet you"
+    }, {
+      "text": "What's up?"
+    }, {
+      "text": "Hiya!"
+    }]
+  }, {
+    "intent": "GRACE_LETTER",
+    "examples": [{
+      "text": "got a letter in the mail"
+    }, {
+      "text": "wondering why they got a letter in the mail"
+    }, {
+      "text": "what is a grace letter"
+    }, {
+      "text": "recieved a grace letter in the mail"
+    }, {
+      "text": "he got a grace letter"
+    }, {
+      "text": "what is his grace period"
+    }, {
+      "text": "why did they get a letter"
+    }, {
+      "text": "they got a grace letter in the mail"
+    }, {
+      "text": "why'd they get a letter"
+    }, {
+      "text": "need information about grace letters"
+    }]
+  }, {
+    "intent": "MORE_OPTIONS",
+    "examples": [{
+      "text": "he wants to pay later"
+    }, {
+      "text": "other options for paying their premium"
+    }, {
+      "text": "they don't want to pay their premium now"
+    }, {
+      "text": "they can't pay now"
+    }, {
+      "text": "they don't want to pay now"
+    }, {
+      "text": "what else could they do"
+    }, {
+      "text": "show me more options"
+    }, {
+      "text": "they would like to know their options"
+    }, {
+      "text": "hear other optons"
+    }, {
+      "text": "they dont wanna pay now"
+    }, {
+      "text": "he doesnt wanna pay now"
+    }, {
+      "text": "he doesnt want to pay his premium"
+    }, {
+      "text": "what are their nfo options?"
+    }, {
+      "text": "she doesnt want to pay"
+    }, {
+      "text": "she cant pay her premium"
+    }, {
+      "text": "what if I don't pay my premium?"
+    }, {
+      "text": "other options so they don't have pay"
+    }]
+  }, {
+    "intent": "PREMIUM_CHANGE",
+    "examples": [{
+      "text": "can you explain why my premium is different now?"
+    }, {
+      "text": "why did my premium increase?"
+    }, {
+      "text": "how come my payment is higher?"
+    }, {
+      "text": "did my premium increase on my policy?"
+    }, {
+      "text": "is there a change in what I owe?"
+    }, {
+      "text": "why did my premium change?"
+    }, {
+      "text": "I see my premium has changed?"
+    }, {
+      "text": "why is my premium not the same?"
+    }, {
+      "text": "why is my payment higher than the last one I sent?"
+    }, {
+      "text": "why is my premium higher than before"
+    }, {
+      "text": "why is my premium lower last year?"
+    }, {
+      "text": "when did my premium lower last year?"
+    }, {
+      "text": "does my premium increse change each year?"
+    }, {
+      "text": "what caused my premium to increase?"
+    }, {
+      "text": "my premium increased, why?"
+    }, {
+      "text": "I have paid this every year, why is it higher now?"
+    }, {
+      "text": "explain why their next premium is different?"
+    }, {
+      "text": "is there a change in their premium?"
+    }, {
+      "text": "why is their premium not the same?"
+    }, {
+      "text": "why did my premium go up"
+    }, {
+      "text": "why'd my premium go up?"
+    }, {
+      "text": "premium went up?"
+    }, {
+      "text": "premium increased?"
+    }]
+  }],
+  "entities": [{
+    "entity": "sys-date",
+    "values": []
+  }, {
+    "entity": "mode",
+    "values": [{
+      "type": "synonyms",
+      "value": "semi annually",
+      "synonyms": ["semi-annual", "semi-annually", "semi annual", "semi annually"]
+    }, {
+      "type": "synonyms",
+      "value": "annual",
+      "synonyms": ["annual", "annually", "yearly", "per year"]
+    }, {
+      "type": "synonyms",
+      "value": "quarterly",
+      "synonyms": ["per quarter", "quarter"]
+    }, {
+      "type": "synonyms",
+      "value": "monthly",
+      "synonyms": ["per month", "month"]
+    }]
+  }, {
+    "entity": "nfoOptions",
+    "values": [{
+      "type": "synonyms",
+      "value": "Extended Term Insurance",
+      "synonyms": ["ETI", "extended term insurance", "extended term"]
+    }, {
+      "type": "synonyms",
+      "value": "Cash Surrender",
+      "synonyms": ["cash surrender", "surrender", "cash surrenders"]
+    }, {
+      "type": "synonyms",
+      "value": "Reduced Paid Up",
+      "synonyms": ["reduced paid up", "rpu", "reduced paid"]
+    }, {
+      "type": "synonyms",
+      "value": "Automatic Premium Loan",
+      "synonyms": ["APL", "automatic premium", "automatic premium loan", "premium loan", "premium loans", "automatic premiums"]
+    }]
+  }],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-07-10"
+    }
+  },
+  "description": "Agent assist to help determine intents regarding premiums",
+  "dialog_nodes": [{
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["$ownerName has several options:"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "NFO Options",
+    "conditions": "",
+    "dialog_node": "node_9_1490829537364",
+    "previous_sibling": "node_39_1491864418513"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["(1) They can  select Premium Loan as the NFO."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "NFO Options",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_41_1491864546943"
+    },
+    "dialog_node": "node_39_1491864418513"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["If they want to pay now, they can mail their check into our offices."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Payment Now",
+    "conditions": " ",
+    "dialog_node": "node_9_1491232672021",
+    "previous_sibling": "Pay online now"
+  }, {
+    "type": "response_condition",
+    "output": {},
+    "parent": "Payment Now",
+    "conditions": " ",
+    "dialog_node": "node_10_1491232672383",
+    "previous_sibling": "node_9_1491232672021"
+  }, {
+    "type": "standard",
+    "title": "Pay online now",
+    "output": {
+      "text": {
+        "values": ["Actually their premium due date of  $premiumDueDate is only a few days away. You may want to suggest they pay on the phone with you now. You can complete this transaction on the dashboard."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Payment Now",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "dialog_node": "Pay online now"
+  }, {
+    "type": "standard",
+    "parent": "Change Payment",
+    "dialog_node": "node_1_1496867694090",
+    "previous_sibling": "node_8_1491865849412"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["I'm sorry, I didn't get that."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Change Payment",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Change Payment"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_8_1491865849412",
+    "previous_sibling": "node_2_1496867715125"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Are they still unable to pay their premium?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Change Payment",
+    "conditions": "#DENY",
+    "dialog_node": "node_19_1491508755570",
+    "previous_sibling": "node_53_1491865121373"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "Change Payment",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_22_1491508859090"
+    },
+    "conditions": "@mode",
+    "dialog_node": "node_53_1491865121373",
+    "previous_sibling": "node_16_1491508555292"
+  }, {
+    "type": "standard",
+    "parent": "Change Payment",
+    "dialog_node": "node_2_1496867715125",
+    "previous_sibling": "node_19_1491508755570"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["What mode do they want to change to?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Change Payment",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "condition",
+      "dialog_node": "node_53_1491865121373"
+    },
+    "conditions": "#AFFIRM",
+    "dialog_node": "node_16_1491508555292"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Sorry, I didn't get that. Would you like to hear their nonforfeiture options?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_13_1491249454333",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "node_15_1491252509518"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_3_1491330633474",
+    "previous_sibling": "NFO Options"
+  }, {
+    "type": "standard",
+    "title": "No options",
+    "output": {
+      "text": {
+        "values": ["$product does not have any nonforfeiture options unfortunately. Are they interested in paying their premium?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_13_1491249454333",
+    "conditions": "#AFFIRM && $product == \"Term Policy\" || $product == 'Universal Life'",
+    "dialog_node": "No options",
+    "previous_sibling": "node_15_1491252509518"
+  }, {
+    "type": "standard",
+    "title": "NFO Options",
+    "output": {},
+    "parent": "node_13_1491249454333",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_39_1491864418513"
+    },
+    "conditions": "#AFFIRM && $product ==\"Whole Life\" || $product ==\"Interest Sensitive Whole Life\"",
+    "dialog_node": "NFO Options",
+    "previous_sibling": "No options"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_13_1491249454333",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#DENY",
+    "dialog_node": "node_15_1491252509518"
+  }, {
+    "type": "standard",
+    "title": "Payment Options",
+    "output": {},
+    "parent": "Change Frequency",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_46_1491864841770"
+    },
+    "dialog_node": "Payment Options"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["I'm sorry I didn't get that. Are they interested in paying their premium?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "No options",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "node_2_1491266346630"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_1_1491865349318",
+    "previous_sibling": "node_3_1491266401107"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "No options",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#DENY",
+    "dialog_node": "node_3_1491266401107",
+    "previous_sibling": "node_2_1491266346630"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "No options",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Payment Now"
+    },
+    "conditions": "#AFFIRM",
+    "dialog_node": "node_2_1491266346630"
+  }, {
+    "type": "standard",
+    "title": "anything else",
+    "output": {
+      "text": {
+        "values": ["I'm sorry, I don't understand. Please ask a question about premiums, grace letters, premium increases, or questions about insurance policies."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "Premium Information"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "anything else",
+    "previous_sibling": "Long Tail Questions"
+  }, {
+    "type": "standard",
+    "title": "Premium Increase",
+    "output": {},
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#PREMIUM_CHANGE",
+    "dialog_node": "Premium Increase",
+    "previous_sibling": "Premium Information"
+  }, {
+    "type": "standard",
+    "title": "Change Frequency",
+    "output": {
+      "text": {
+        "values": ["By increasing the frequency of their payments, they can reduce their premiums."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Payment Options"
+    },
+    "conditions": "#MORE_OPTIONS && $mode !='Monthly'",
+    "dialog_node": "Change Frequency",
+    "previous_sibling": "Payment Now"
+  }, {
+    "type": "standard",
+    "title": "Other Payment Options",
+    "output": {},
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_13_1491249454333"
+    },
+    "conditions": "#MORE_OPTIONS",
+    "dialog_node": "Other Payment Options",
+    "previous_sibling": "Change Frequency"
+  }, {
+    "type": "standard",
+    "title": "Payment Now",
+    "output": {},
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Pay online now"
+    },
+    "conditions": "#PAY_NOW",
+    "dialog_node": "Payment Now",
+    "previous_sibling": "Grace Letter"
+  }, {
+    "type": "standard",
+    "title": "Do Not Need Anymore Help",
+    "output": {
+      "text": {
+        "values": ["Okay, if you need more help, please put in another policy number or ask me an insurance question!"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "John Smith"
+    },
+    "conditions": "#DENY",
+    "dialog_node": "Do Not Need Anymore Help",
+    "previous_sibling": "Change Accounts"
+  }, {
+    "type": "standard",
+    "title": "Change Accounts",
+    "output": {},
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "John Smith"
+    },
+    "conditions": "#CHANGE_ACCOUNTS",
+    "dialog_node": "Change Accounts",
+    "previous_sibling": "NFO Definitions"
+  }, {
+    "type": "standard",
+    "title": "Grace Letter",
+    "output": {},
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Grace period expiry date"
+    },
+    "conditions": "#GRACE_LETTER && $gracePeriodExpiryDate != 'NA'",
+    "dialog_node": "Grace Letter",
+    "previous_sibling": "Premium Increase"
+  }, {
+    "type": "standard",
+    "title": "NFO Definitions",
+    "output": {},
+    "parent": "How can I help you",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_14_1491274931844"
+    },
+    "conditions": "@nfoOptions",
+    "dialog_node": "NFO Definitions",
+    "previous_sibling": "Other Payment Options"
+  }, {
+    "type": "standard",
+    "title": "Long Tail Questions",
+    "output": {
+      "text": {
+        "values": ["Take a look at what I found."]
+      },
+      "display": "Let's see here..",
+      "call_discovery": true
+    },
+    "parent": "How can I help you",
+    "context": {},
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#LONG_TAIL",
+    "dialog_node": "Long Tail Questions",
+    "previous_sibling": "Do Not Need Anymore Help"
+  }, {
+    "type": "standard",
+    "title": "Premium Information",
+    "output": {
+      "text": {
+        "values": ["Here is $ownerName's  premium payment information: their $mode premium of $$modePremium is due on $premiumDueDate."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "How can I help you",
+    "metadata": {},
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#PREMIUM_INFORMATION",
+    "dialog_node": "Premium Information"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["(4) Or they can do a cash surrender in lieu of continuing his premium payments which will be $$nfoCashSurrender."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_44_1491864585832",
+    "conditions": " $product == \"Whole Life\"",
+    "dialog_node": "node_45_1491864610458",
+    "previous_sibling": "node_8_1491274070983"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Would you like to learn more about any of these NFO's?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_44_1491864585832",
+    "dialog_node": "node_8_1491274070983"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["A policy’s grace period provision states the time that the policy, including all riders, will stay in force after premium is due and unpaid. A typical grace period is usually 30 to 61 days."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Grace Letter",
+    "conditions": " ",
+    "dialog_node": "node_30_1490824119609",
+    "previous_sibling": "Grace period expiry date"
+  }, {
+    "type": "standard",
+    "title": "Grace period expiry date",
+    "output": {
+      "text": {
+        "values": ["Their Grace Period expires on $gracePeriodExpiryDate."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Grace Letter",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "dialog_node": "Grace period expiry date"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["They could pay $$semiAnnualPremium semi annually."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Payment Options",
+    "conditions": " $mode == \"Annual\"",
+    "dialog_node": "node_13_1491508349759",
+    "previous_sibling": "node_12_1491508313933"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["They could pay $$quarterlyPremium quarterly."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Payment Options",
+    "conditions": " $mode == \"Semi Annual\"",
+    "dialog_node": "node_14_1491508367023",
+    "previous_sibling": "node_13_1491508349759"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["They could pay $$monthlyPremium monthly."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Payment Options",
+    "conditions": " $mode == \"Quarterly\"",
+    "dialog_node": "node_12_1491508313933",
+    "previous_sibling": "node_46_1491864841770"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "Payment Options",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_49_1491864965551"
+    },
+    "dialog_node": "node_46_1491864841770"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Great, I'll change their payments to semi-annual."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_53_1491865121373",
+    "conditions": "@mode:(semi annually)",
+    "dialog_node": "node_4_1491865503387",
+    "previous_sibling": "node_3_1491865476172"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Great, I'll change their payments to monthly."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_53_1491865121373",
+    "conditions": "@mode:monthly",
+    "dialog_node": "node_3_1491865476172",
+    "previous_sibling": "node_22_1491508859090"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Great, I'll change their payments to quarterly."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_53_1491865121373",
+    "conditions": "@mode:quarterly",
+    "dialog_node": "node_5_1491865508130",
+    "previous_sibling": "node_4_1491865503387"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Do they want to pay now?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_53_1491865121373",
+    "dialog_node": "node_22_1491508859090"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Okay, please input the policy number of your new customer or ask me an insurance question!"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Change Accounts",
+    "conditions": " ",
+    "dialog_node": "node_8_1491268167247"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["If a Policyowner elects cash surrender in lieu of continuing his premium payments, he will receive the cash value, minus outstanding loans and loan interest."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "NFO Definitions",
+    "conditions": " @nfoOptions:(Cash Surrender)",
+    "dialog_node": "node_11_1491274790638",
+    "previous_sibling": "node_10_1491274212174"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["The application usually provides an opportunity for the applicant to select Premium Loan as the Non-Forfeiture Option, stating that they can select it then, or in writing when premium is unpaid before the grace period ends. The application will also state the other NFO options available on the product, and name one (or more, sometimes dependent on ratings) as the automatic non-forfeiture option, which will systematically kick in if an NFO option was not selected at application."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "NFO Definitions",
+    "conditions": "@nfoOptions:(Automatic Premium Loan)",
+    "dialog_node": "node_10_1491274212174",
+    "previous_sibling": "node_14_1491274931844"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["When a policy is put on the reduced paid up NFO, the cash value is used to purchase a fully paid-up policy of the same kind with a face amount that is less than the original face."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "NFO Definitions",
+    "conditions": " @nfoOptions:(Reduced Paid Up)",
+    "dialog_node": "node_13_1491274818742",
+    "previous_sibling": "node_12_1491274803805"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Extended term insurance comes about when a policy’s cash value is used to purchase term insurance for an amount that is equal to the policy’s original face and will remain in force for the period that the cash value will purchase. When the extended term ends, the policy coverage will expire."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "NFO Definitions",
+    "conditions": " @nfoOptions:(Extended Term Insurance)",
+    "dialog_node": "node_12_1491274803805",
+    "previous_sibling": "node_11_1491274790638"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Would you like to hear about other NFO's?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "NFO Definitions",
+    "dialog_node": "node_14_1491274931844"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["During the Premium Guarantee Period, Your premiums are level and guaranteed. If you choose to renew Your Policy at the end of the Premium Guarantee Period, the premiums may increase."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Premium Increase",
+    "conditions": " $product == 'Term Policy'",
+    "dialog_node": "node_8_1491231136553",
+    "previous_sibling": "node_4_1490826684856"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Due to $ownerName's policy type, their premium should not have increased."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Premium Increase",
+    "conditions": " anything_else",
+    "dialog_node": "node_21_1491243490203",
+    "previous_sibling": "node_8_1491231136553"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Interest sensitive whole life policies will recalculate the required premium each year.  If the required premium increases beyond a tolerance the Owner may choose between increasing the premium or decreasing the face amount"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Premium Increase",
+    "conditions": "$product == 'Interest Sensitive Whole Life'",
+    "dialog_node": "node_4_1490826684856"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_14_1491274931844",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#DENY",
+    "dialog_node": "node_18_1491275150610",
+    "previous_sibling": "node_17_1491275100104"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Which NFO would you like to learn more about?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_14_1491274931844",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "Premium Information"
+    },
+    "conditions": "#AFFIRM",
+    "dialog_node": "node_17_1491275100104",
+    "previous_sibling": "node_8_1491318837607"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["I'm sorry I didn't get that. Would you like to hear about other NFO's?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_14_1491274931844",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "node_8_1491318837607"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_6_1491330760853",
+    "previous_sibling": "node_18_1491275150610"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_14_1491274931844",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "NFO Definitions"
+    },
+    "conditions": "@nfoOptions",
+    "dialog_node": "node_8_1491318837607"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["(3) They can put their policy on a reduced paid up NFO for $$nfoReducedPaidUp."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_41_1491864546943",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_44_1491864585832"
+    },
+    "dialog_node": "node_43_1491864550196"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["I'm sorry, I didn't get that.", ""],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_22_1491508859090",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_22_1491508859090"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_9_1491865861466",
+    "previous_sibling": "node_18_1491508728746"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_22_1491508859090",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#DENY",
+    "dialog_node": "node_18_1491508728746",
+    "previous_sibling": "node_17_1491508704043"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_22_1491508859090",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Payment Now"
+    },
+    "conditions": "#AFFIRM",
+    "dialog_node": "node_17_1491508704043"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_43_1491864550196",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_8_1491274070983"
+    },
+    "dialog_node": "node_44_1491864585832"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["I'm sorry, I didn't get that."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_19_1491508755570",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_19_1491508755570"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_6_1491865593665",
+    "previous_sibling": "node_21_1491508833067"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_19_1491508755570",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_22_1491508859090"
+    },
+    "conditions": "#DENY",
+    "dialog_node": "node_21_1491508833067",
+    "previous_sibling": "node_20_1491508790197"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_19_1491508755570",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Other Payment Options"
+    },
+    "conditions": "#AFFIRM",
+    "dialog_node": "node_20_1491508790197"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Or $$monthlyPremium monthly."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_46_1491864841770",
+    "conditions": " $mode ==\"Semi Annual\"",
+    "dialog_node": "node_48_1491864875837",
+    "previous_sibling": "node_47_1491864864310"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["$$quarterlyPremium quarterly."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_46_1491864841770",
+    "conditions": " $mode ==\"Annual\"",
+    "dialog_node": "node_47_1491864864310",
+    "previous_sibling": "node_49_1491864965551"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_46_1491864841770",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Change Payment"
+    },
+    "dialog_node": "node_49_1491864965551"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Stopping payments may be the Policyowner’s choice, or it may be necessary if there is financial hardship. Either way, a traditional Whole Life policy with unpaid premium after the grace period will lapse."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Other Payment Options",
+    "conditions": "$product== 'Whole Life'",
+    "dialog_node": "node_15_1491236769935",
+    "previous_sibling": "node_13_1491249454333"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Stopping payments may be the Policyowner’s choice, or it may be necessary if there is financial hardship. Either way, a Interst Sensitive Whole Life policy  with unpaid premium after the grace period will lapse."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Other Payment Options",
+    "conditions": "$product == 'Interest Sensitive Whole Life'",
+    "dialog_node": "node_17_1491236904126",
+    "previous_sibling": "node_16_1491236807671"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["If a premium is not paid when due, the Policy will go into default.  If the Policy goes into default, We will send You a notice warning You that the Policy is in danger of terminating. That notice will tell You the premium required to keep the Policy from terminating. That notice will be mailed to You at your last goes into default, We will send You a notice warning You that the Policy is in known address, and to any assignee of record.    We will keep the Policy inforce for the 31 day period following the date Your Policy goes into default. We call that period the Grace Period. However, if We have not received the required premiums (specified in Your warning notice) by the end of the Grace Period, the Policy will terminate.    If the Insured dies during the Grace Period, We will pay the Death Benefit less the required premium payment."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Other Payment Options",
+    "conditions": "$product == 'Term Policy'",
+    "dialog_node": "node_18_1491236919723",
+    "previous_sibling": "node_17_1491236904126"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Stopping payments may be the Policyowner’s choice, or it may be necessary if there is financial hardship.  A Universal Life policy in which premiums are being deducted from the cash value bucket will lapse if the bucket is depleted and the grace period is over."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Other Payment Options",
+    "conditions": "$product== 'Universal Life'",
+    "dialog_node": "node_16_1491236807671",
+    "previous_sibling": "node_15_1491236769935"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Would you like to hear their nonforfeiture options?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Other Payment Options",
+    "dialog_node": "node_13_1491249454333"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["(2) They could do extended term insurance which will expire on $nfoExtendedTermInsurance."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_39_1491864418513",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "node_43_1491864550196"
+    },
+    "dialog_node": "node_41_1491864546943"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "Welcome",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Welcome"
+    },
+    "conditions": "#GREETING",
+    "dialog_node": "node_5_1491271683675",
+    "previous_sibling": "Fred Rogers"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["If you need more help, enter a policy number or a question."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "context": {
+      "mode": "",
+      "product": "",
+      "ownerName": "",
+      "faceAmount": "",
+      "modePremium": "",
+      "policyNumber": "",
+      "premiumDueDate": "",
+      "nfoCashSurrender": "",
+      "nfoReducedPaidUp": "",
+      "premiumIncreased": "",
+      "receivedGraceLetter": "",
+      "gracePeriodExpiryDate": "",
+      "nfoAutomaticPremiumLoan": "",
+      "receivedRedetermination": "",
+      "nfoExtendedTermInsurance": ""
+    },
+    "conditions": " anything_else",
+    "dialog_node": "node_2_1491329346448",
+    "previous_sibling": "node_3_1491229126678"
+  }, {
+    "type": "standard",
+    "title": "Fred Rogers",
+    "output": {
+      "text": {
+        "values": ["I'm pulling up $ownerName's account up now."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "context": {
+      "mode": "Quarterly",
+      "product": "Universal Life",
+      "ownerName": "Fred Rogers",
+      "faceAmount": "125,000",
+      "modePremium": "250",
+      "policyNumber": "01023121",
+      "monthlyPremium": "83.33",
+      "premiumDueDate": "3-15-2018",
+      "nfoCashSurrender": "NA",
+      "nfoReducedPaidUp": "NA",
+      "premiumIncreased": "NA",
+      "quarterlyPremium": "250",
+      "semiAnnualPremium": "500",
+      "receivedGraceLetter": "Yes",
+      "gracePeriodExpiryDate": "4-30-27",
+      "nfoAutomaticPremiumLoan": "NA",
+      "receivedRedetermination": "NA",
+      "nfoExtendedTermInsurance": "NA"
+    },
+    "metadata": {},
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help you"
+    },
+    "conditions": "input.text == '01023121'",
+    "dialog_node": "Fred Rogers",
+    "previous_sibling": "Jane Doe"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Hi! Let's get started by inputting your customer's policy number or an insurance question."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "context": {
+      "mode": "",
+      "product": "",
+      "ownerName": "",
+      "faceAmount": "",
+      "modePremium": "",
+      "policyNumber": "",
+      "premiumDueDate": "",
+      "nfoCashSurrender": "",
+      "nfoReducedPaidUp": "",
+      "premiumIncreased": "",
+      "receivedGraceLetter": "",
+      "gracePeriodExpiryDate": "",
+      "nfoAutomaticPremiumLoan": "",
+      "receivedRedetermination": "",
+      "nfoExtendedTermInsurance": ""
+    },
+    "conditions": " #GREETING",
+    "dialog_node": "node_3_1491229126678",
+    "previous_sibling": "node_3_1490194455646"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Hi there- Watson here! Please input the customer's policy number so I can pull their information. You can also ask an insurance question here and I'll try to answer it."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "context": {
+      "mode": "",
+      "product": "",
+      "ownerName": "",
+      "faceAmount": "",
+      "modePremium": "",
+      "policyNumber": "",
+      "premiumDueDate": "",
+      "nfoCashSurrender": "",
+      "nfoReducedPaidUp": "",
+      "premiumIncreased": "",
+      "receivedGraceLetter": "",
+      "gracePeriodExpiryDate": "",
+      "nfoAutomaticPremiumLoan": "",
+      "receivedRedetermination": "",
+      "nfoExtendedTermInsurance": ""
+    },
+    "conditions": " conversation_start",
+    "dialog_node": "node_3_1490194455646",
+    "previous_sibling": "node_3_1491271550115"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Take a look at what I found."]
+      },
+      "display": "Let's see here..",
+      "call_discovery": true
+    },
+    "parent": "Welcome",
+    "context": {},
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "Welcome"
+    },
+    "conditions": "#LONG_TAIL",
+    "dialog_node": "node_1_1491329055494",
+    "previous_sibling": "node_5_1491271683675"
+  }, {
+    "type": "standard",
+    "title": "Jane Doe",
+    "output": {
+      "text": {
+        "values": ["I'm pulling up $ownerName's account up now."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "context": {
+      "mode": "Annual",
+      "product": "Interest Sensitive Whole Life",
+      "ownerName": "Phil Ratcliff",
+      "faceAmount": "5,000,000",
+      "modePremium": "7,500",
+      "policyNumber": "23232323",
+      "monthlyPremium": "645",
+      "premiumDueDate": "3-15-2018",
+      "nfoCashSurrender": "475,250",
+      "nfoReducedPaidUp": "575,000",
+      "premiumIncreased": "Yes",
+      "quarterlyPremium": "1,950",
+      "semiAnnualPremium": "3,825",
+      "receivedGraceLetter": "NA",
+      "gracePeriodExpiryDate": "NA",
+      "nfoAutomaticPremiumLoan": "Yes",
+      "receivedRedetermination": "Yes",
+      "nfoExtendedTermInsurance": "NA"
+    },
+    "metadata": {},
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help you"
+    },
+    "conditions": "input.text =='23232323'",
+    "dialog_node": "Jane Doe",
+    "previous_sibling": "Al Jones"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["I'm sorry, I don't have that policy number. Please try a different policy number."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "John Smith"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_3_1491271550115",
+    "previous_sibling": "node_1_1491329055494"
+  }, {
+    "type": "standard",
+    "title": "Al Jones",
+    "output": {
+      "text": {
+        "values": ["I'm pulling up $ownerName's account up now."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "context": {
+      "mode": "Semi Annual",
+      "product": "Term Policy",
+      "ownerName": "Al Jones",
+      "faceAmount": "75,000",
+      "modePremium": "69.57",
+      "policyNumber": "0234576",
+      "monthlyPremium": "11.73",
+      "premiumDueDate": "3-15-2018",
+      "nfoCashSurrender": "NA",
+      "nfoReducedPaidUp": "NA",
+      "premiumIncreased": "Yes",
+      "quarterlyPremium": "35.47",
+      "semiAnnualPremium": "69.57",
+      "receivedGraceLetter": "NA",
+      "gracePeriodExpiryDate": "NA",
+      "nfoAutomaticPremiumLoan": "NA",
+      "receivedRedetermination": "NA",
+      "nfoExtendedTermInsurance": "NA"
+    },
+    "metadata": {},
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help you"
+    },
+    "conditions": "input.text == '0234576'",
+    "dialog_node": "Al Jones",
+    "previous_sibling": "John Smith"
+  }, {
+    "type": "standard",
+    "title": "John Smith",
+    "output": {
+      "text": {
+        "values": ["I'm pulling up $ownerName's account up now."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "Welcome",
+    "context": {
+      "mode": "Monthly",
+      "product": "Whole Life",
+      "ownerName": "John Smith",
+      "faceAmount": "500,000",
+      "modePremium": "1,000",
+      "policyNumber": "123456789",
+      "annualPremium": "11,627.91",
+      "monthlyPremium": "1,000.00",
+      "premiumDueDate": "3-15-2018",
+      "nfoCashSurrender": "75,233",
+      "nfoReducedPaidUp": "133,500",
+      "premiumIncreased": "NA",
+      "quarterlyPremium": "3,023.26",
+      "semiAnnualPremium": "5,930.23",
+      "receivedGraceLetter": "4-15-2017",
+      "gracePeriodExpiryDate": "1-15-2025",
+      "nfoAutomaticPremiumLoan": "Yes",
+      "receivedRedetermination": "NA",
+      "nfoExtendedTermInsurance": "1-15-2025"
+    },
+    "metadata": {},
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help you"
+    },
+    "conditions": "input.text == \"123456789\"",
+    "dialog_node": "John Smith"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_8_1491274070983",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "NFO Definitions"
+    },
+    "conditions": "@nfoOptions",
+    "dialog_node": "node_5_1491317706714",
+    "previous_sibling": "node_2_1491317677798"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Sorry I didn't get that, would you like to learn about any of these NFO's?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_8_1491274070983",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "node_2_1491317677798"
+    },
+    "conditions": "anything_else",
+    "dialog_node": "node_5_1491330687196",
+    "previous_sibling": "node_1_1491280796986"
+  }, {
+    "type": "standard",
+    "output": {},
+    "parent": "node_8_1491274070983",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "body",
+      "dialog_node": "How can I help now- after initial task"
+    },
+    "conditions": "#DENY",
+    "dialog_node": "node_1_1491280796986",
+    "previous_sibling": "node_5_1491317706714"
+  }, {
+    "type": "standard",
+    "output": {
+      "text": {
+        "values": ["Which NFO would you like to look at?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_8_1491274070983",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "Premium Information"
+    },
+    "conditions": "#AFFIRM",
+    "dialog_node": "node_2_1491317677798"
+  }, {
+    "type": "response_condition",
+    "output": {
+      "text": {
+        "values": ["Or $$monthlyPremium monthly."],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_49_1491864965551",
+    "conditions": " $mode ==\"Annual\"",
+    "dialog_node": "node_50_1491864967920",
+    "previous_sibling": "Change Payment"
+  }, {
+    "type": "standard",
+    "title": "Change Payment",
+    "output": {
+      "text": {
+        "values": ["How do they want to change their premium modes?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "node_49_1491864965551",
+    "dialog_node": "Change Payment"
+  }, {
+    "type": "standard",
+    "title": "How can I help now- after initial task",
+    "output": {
+      "text": {
+        "values": ["How else can I help you with $ownerName's account?", "Anything else I can help you with on $ownerName's account?", "What else can I help you with $ownerName's account?"],
+        "selection_policy": "random"
+      }
+    },
+    "parent": "John Smith",
+    "next_step": {
+      "behavior": "jump_to",
+      "selector": "user_input",
+      "dialog_node": "Premium Information"
+    },
+    "dialog_node": "How can I help now- after initial task",
+    "previous_sibling": "How can I help you"
+  }, {
+    "type": "standard",
+    "title": "How can I help you",
+    "output": {
+      "text": {
+        "values": ["How can I help you with $ownerName's account?"],
+        "selection_policy": "sequential"
+      }
+    },
+    "parent": "John Smith",
+    "conditions": "",
+    "dialog_node": "How can I help you"
+  }, {
+    "type": "standard",
+    "title": "Catch-all",
+    "output": {
+      "text": {
+        "values": ["I'm afraid I don't understand that.  I am currently only a limited scope prototype, so I'll be able to answer more questions with more training.  Until then, I can help you find information about your premium and determine why it may have changed."],
+        "selection_policy": "sequential"
+      }
+    },
+    "conditions": "anything_else",
+    "dialog_node": "Catch-all",
+    "previous_sibling": "Welcome"
+  }, {
+    "type": "standard",
+    "title": "Welcome",
+    "output": {},
+    "conditions": "conversation_start || #GREETING",
+    "dialog_node": "Welcome"
+  }],
+  "workspace_id": "07bee2b3-b627-459c-aba2-d66b5b42178d",
+  "counterexamples": [{
+    "text": "you cant"
+  }],
+  "learning_opt_out": false
+}
