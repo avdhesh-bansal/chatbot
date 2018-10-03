@@ -1,10 +1,10 @@
 applications:
 - services:
-  - our-assistant-dev
-  - our-discovery-dev
-  - our-cloudant-db
-  - our-object-storage-dev
-  name: my-watson-assistant-api
+  - er-avdhesh-assistant
+  - er-avdhesh-discovery
+  - er-avdhesh-cloudant
+  - er-avdhesh-cloud-storage
+  name: er-avdhesh-assistant-api
   command: node .
   path: .
   memory: 512M
