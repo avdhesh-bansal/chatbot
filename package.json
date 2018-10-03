@@ -1,15 +1,15 @@
 {
-  "name": "my-watson-assistant",
+  "name": "er-avdhesh-chatbot",
   "version": "1.0.0",
   "main": "server/server.js",
-  "homepage": "https://git.ng.bluemix.net/gurvsin3/my-watson-assistant",
+  "homepage": "",
   "repository": {
     "type": "",
     "url": ""
   },
-  "author": "Gurvinder Singh",
+  "author": "avdhesh bansal",
   "contributors": [
-    "Gurvinder Singh <gurvsin3@in.ibm.com> (http://www.gurvinder.info)"
+    ""
   ],
   "engines": {
     "node": "8.9.0",
@@ -78,5 +78,5 @@
     "nsp": "^3.2.1"
   },
   "license": "UNLICENSED",
-  "description": "my-watson-assistant"
+  "description": "er-avdhesh-chatbot"
 }
