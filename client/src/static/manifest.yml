@@ -1,6 +1,6 @@
 ---
 applications:
-- name:      my-watson-assistant
-  host:      my-watson-assistant
+- name:      er-avdhesh-chatbot
+  host:      er-avdhesh-chatbot
   memory:    64M
   buildpack: staticfile_buildpack
