@@ -4,7 +4,7 @@ applications:
   - er-avdhesh-discovery
   - er-avdhesh-cloudant
   - er-avdhesh-cloud-storage
-  name: er-avdhesh-assistant-api
+  name: er-avdhesh-chatbot
   command: node .
   path: .
   memory: 512M
