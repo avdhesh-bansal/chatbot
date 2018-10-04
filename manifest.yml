@@ -7,4 +7,4 @@ applications:
   name: er-avdhesh-chatbot
   command: node .
   path: .
-  memory: 512M
+  memory: 256M
