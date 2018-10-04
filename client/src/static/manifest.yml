@@ -1,6 +1,6 @@
 ---
 applications:
-- name:      er-avdhesh-chatbot
-  host:      er-avdhesh-chatbot
+- name:      er-avdhesh-chatbot-ui
+  host:      er-avdhesh-chatbot-ui
   memory:    64M
   buildpack: staticfile_buildpack
